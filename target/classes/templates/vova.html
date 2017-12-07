@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/" lang="en">
+
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Title</title>
+</head>
+
+
+<body>
+<div>Hellow</div>
+<!--<div><a th:href="http:\\D:\Mega\vova\src\main\resources\templates\vjsp.jsp">vjsp refference</a></div>-->
+
+<div th:text="${vvvv}"></div>
+<h3>Input form</h3>
+<form action="VCreateForm" th:object = "${vcastomer}">
+
+    Title:<br></br>
+    <input type="text" name="title" value="Mickey"></input>
+    <br></br>
+    Price:<br></br>
+    <input type="number" name="price" value="10"></input>
+    <br></br><br></br>
+    <input type="submit" value="Create"></input>
+</form>
+<br></br><br></br>
+
+
+<h3>Change form</h3>
+<form action="VChangeForm">
+    Title:<br></br>
+    <input type="text" name="title"></input>
+    <br></br>
+    Price:<br></br>
+    <input type="number" name="Price"></input>
+    <br></br>
+    <br></br><br></br>
+    <input type="submit" value="Change"></input>
+</form>
+<br></br><br></br>
+
+<h3>Delete form</h3>
+<form action="VDeleteForm" th:object = "${vcastomer}">
+    Title:<br></br>
+    <input type="text" name="title"></input>
+
+    <br></br><br></br>
+    <input type="submit" value="Delete Record"></input>
+</form>
+
+</body>
+</html>

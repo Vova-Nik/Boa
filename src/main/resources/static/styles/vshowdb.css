@@ -1,0 +1,20 @@
+.vcell{
+    background-color: rgba(184, 17, 194, 0.81);
+    opacity: 1;
+    border-radius: 4px;
+    margin: 4px;
+    /*box-shadow: 6px 6px 4px rgba(128,0,100,1);*/
+    border-style: solid;
+    border-color: #300030;
+   /* font-family: "Comic Sans MS";*/
+}
+
+.class{
+    background: green;
+}
+
+.vindex{
+    background-color: rgba(59, 186, 194, 0.91);
+    border-style: solid;
+    border-color: #300030;
+}
